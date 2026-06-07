@@ -31,7 +31,7 @@ The client sends requests containing an operation type, key, and data. The serve
 ├── server.c           # Server implementation
 ├── vigenere.c         # Vigenère cipher implementation
 ├── vigenere.h         # Vigenère cipher declarations
-└── report.pdf         # Implementation report
+
 ```
 
 ## Protocol Format
