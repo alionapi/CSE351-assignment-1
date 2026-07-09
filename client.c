@@ -49,7 +49,6 @@ int process_data_chunk(int sockfd, const char *data, size_t data_len, const char
         fprintf(stderr, "Chunk too large for protocol\n");
         return -1;
     }
-    // Create message header
     message_header_t header;
     header.op = htons((uint16_t)op);
     header.key_length = htons((uint16_t)key_len);
