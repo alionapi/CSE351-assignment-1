@@ -13,7 +13,6 @@
 #define MAX_MESSAGE_SIZE 10000000  // is allowed 10 MB
 #define HEADER_SIZE 8  // total 2 + 2 + 4 bytes
 #define MAX_CONNECTIONS 50
-
 typedef struct {
     uint16_t op;
     uint16_t key_length;
