@@ -52,7 +52,6 @@ int handle_client_message(int client_fd) {
     if (recv_all(client_fd, &header, HEADER_SIZE) == -1) {
         return -1;
     }
-    // Convert from network byte order here
     uint16_t op = ntohs(header.op);
     uint16_t key_length = ntohs(header.key_length);
     uint32_t data_length = ntohl(header.data_length);
