@@ -45,7 +45,6 @@ int recv_all(int sockfd, void *buf, size_t len) {
 }
 int process_data_chunk(int sockfd, const char *data, size_t data_len, const char *key, int op) {
     size_t key_len = strlen(key);
-    // Validate chunk size fits in protocol limits
     if (HEADER_SIZE + key_len + data_len > MAX_MESSAGE_SIZE) {
         fprintf(stderr, "Chunk too large for protocol\n");
         return -1;
