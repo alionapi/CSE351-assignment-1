@@ -41,7 +41,7 @@ int recv_all(int sockfd, void *buf, size_t len) {
             if (errno == EINTR) continue;
             return -1;
         }
-        if (received == 0) return -1;  // Connection now is closed
+        if (received == 0) return -1;  
         total_received += received;
     }
     return 0;
