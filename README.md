@@ -19,6 +19,7 @@ The client sends requests containing an operation type, key, and data. The serve
 * Large message support through chunking
 * Build automation using Makefile
 
+
 ## Repository Structure
 
 ```text
