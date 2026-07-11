@@ -9,7 +9,6 @@ void vigenere_encrypt(const char *plaintext, const char *key, char *ciphertext, 
         if (c >= 'A' && c <= 'Z') {
             c = c - 'A' + 'a';
         }
-        // Only encrypt if they are alphabetic characters
         if (c >= 'a' && c <= 'z') {
             // Get here a key character and convert to lowercase
             char key_char = key[key_index % key_len];
