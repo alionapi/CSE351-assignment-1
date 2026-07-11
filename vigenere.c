@@ -29,7 +29,6 @@ void vigenere_decrypt(const char *ciphertext, const char *key, char *plaintext, 
         char c = ciphertext[i];
         if (isalpha(c)) {
             c = tolower(c);
-            // Get key character and convert to lowercase
             char key_char = key[key_index % key_len];
             key_char = tolower(key_char);
             // Apply Vigenère decipher: (ciphertext - key + 26) mod 26
