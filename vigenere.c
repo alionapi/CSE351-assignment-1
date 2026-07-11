@@ -27,7 +27,6 @@ void vigenere_decrypt(const char *ciphertext, const char *key, char *plaintext, 
     size_t key_index = 0;
     for (size_t i = 0; i < text_len; i++) {
         char c = ciphertext[i];
-        // Check if character is alphabetic and convert to lowercase
         if (isalpha(c)) {
             c = tolower(c);
             // Get key character and convert to lowercase
