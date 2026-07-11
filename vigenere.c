@@ -31,7 +31,6 @@ void vigenere_decrypt(const char *ciphertext, const char *key, char *plaintext, 
             c = tolower(c);
             char key_char = key[key_index % key_len];
             key_char = tolower(key_char);
-            // Apply Vigenère decipher: (ciphertext - key + 26) mod 26
             int shift = key_char - 'a';
             int decrypted_value = (c - 'a' - shift + 26) % 26;
             plaintext[i] = decrypted_value + 'a';
