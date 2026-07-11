@@ -10,7 +10,6 @@ void vigenere_encrypt(const char *plaintext, const char *key, char *ciphertext, 
             c = c - 'A' + 'a';
         }
         if (c >= 'a' && c <= 'z') {
-            // Get here a key character and convert to lowercase
             char key_char = key[key_index % key_len];
             if (key_char >= 'A' && key_char <= 'Z') {
                 key_char = key_char - 'A' + 'a';
