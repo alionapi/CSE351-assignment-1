@@ -14,7 +14,6 @@ void vigenere_encrypt(const char *plaintext, const char *key, char *ciphertext, 
             if (key_char >= 'A' && key_char <= 'Z') {
                 key_char = key_char - 'A' + 'a';
             }
-            // Apply Vigenère cipher that follows the formula (plaintext + key) mod 26
             int shift = key_char - 'a';
             ciphertext[i] = ((c - 'a' + shift) % 26) + 'a';
             key_index++;
