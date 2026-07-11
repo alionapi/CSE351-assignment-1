@@ -18,7 +18,6 @@ void vigenere_encrypt(const char *plaintext, const char *key, char *ciphertext, 
             ciphertext[i] = ((c - 'a' + shift) % 26) + 'a';
             key_index++;
         } else {
-            // Non-alphabetic characters will remain unchanged
             ciphertext[i] = plaintext[i];
         }
     }
